@@ -18,13 +18,8 @@ const[selectedEmployee1,setSelectedEmployee1]=useState({
 
 
  const eventHandler=(e)=>{
-//const dataCopy={...data}
-//dataCopy[contextValue.index][e.target.name]=e.target.value
 
-//const selectedEmployee1Copy={...selectedEmployee1}
-//console.log(selectedEmployee1Copy.fullName);
-// selectedEmployeeCopy[contextValue.index][e.target.name]=e.target.value
-//console.log(selectedEmployee1Copy);
+
 const employeeCopy={...selectedEmployee1}
 employeeCopy[e.target.name]=e.target.value
 setSelectedEmployee1(employeeCopy)
